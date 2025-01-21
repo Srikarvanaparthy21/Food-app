@@ -1,6 +1,6 @@
 import userModel from "../models/userModel.js";
 import jwt from 'jsonwebtoken';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import validator from 'validator';
 import { response } from "express";
 
@@ -18,13 +18,13 @@ export const logInUser= async (req,res)=>{
         }
         const token = createToken(user._id);
         res.json({success:true,token})
-        
+
     } catch (error) {
         console.log(error)
         res.json({success:false,message:"Error"})
-        
+
     }
-    
+
 }
 
 const createToken = (id)=>{
@@ -65,8 +65,8 @@ export const registerUser= async (req,res)=>{
     } catch (error) {
         console.log(error)
         response.json({success:false,message:"Error"})
-      
-       
+
+
     }
 
 
