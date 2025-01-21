@@ -14,4 +14,4 @@ export const assets ={
     parcel_icon
 }
 
-export const url = 'https://teams.live.com/meet/9325811883386?p=Z6YDiVJ81zyaLt9koc'
+export const url = 'https://food-app-backend-t0ne.onrender.com'

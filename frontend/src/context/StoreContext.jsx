@@ -13,7 +13,7 @@ const StoreContextProvider = (props) => {
     const [cartItems, setCartItems] = useState({})
     const [token , setToken] = useState("")
     const [food_list,setFoodList]=useState([])
-    const url='https://food-app-backend-t0ne.onrender.com '
+    const url='https://food-app-backend-t0ne.onrender.com'
 
     const addToCart =async (itemId) => {
         if (!cartItems[itemId]) {
